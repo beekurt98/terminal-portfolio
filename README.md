@@ -5,7 +5,7 @@ This project was inspired by Guillaume Reygner's portfolio (https://guillaumerey
 + The Terminal window can be minimized and closed. When minimized, the contents will remain but if X is pressed, the contents will reset.
 + The up/down arrows work & the previous commands entered during the session can be accessed. Pressing Tab will complete the input.
 
-Working on Turkish translation.<br />
+Working on Turkish translation + responsiveness on smaller screens.<br />
 I will be changing some of the theme colors.
 
 Credits:<br />
