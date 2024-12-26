@@ -47,6 +47,7 @@ export let commentsDiv = document.querySelector(".comments");
 let themes = ["hacker", "default", "light", "cute"];
 let rootCmds = {
     "about": `<div>Hey, I'm Berna Kurt! I'm a junior web developer who wants to build good, responsive and secure websites!</div>`,
+    "education": ["Computer Engineering - Adnan Menderes University (Incomplete)", "Korean Language and Literature - Ankara University (GPA: 3.96)", "Exchange Student with Focus on KFL - Hanguk University of Foreign Studies"],
     "skills": `<div><p>Languages: Turkish (native), English (fluent), Korean (fluent)</p>
         <p>Programming languages: Python, JavaScript/Typescript, PHP</p>
         <p>Frameworks & Libraries: Selenium, BeautifulSoup4, Pandas, Node.JS, Express, React.JS (loading...)</p>
@@ -133,7 +134,7 @@ function addComment() {
             if (userCommand.startsWith("get ")) {
                 window.open(rootCmds[userCommand]);
                 return;
-            } else if (userCommand === "experience" || userCommand === "certificates") {
+            } else if (userCommand === "experience" || userCommand === "certificates" || userCommand === "education") {
                 commentsDiv.innerHTML += `<ul>${rootCmds[userCommand].map((x) => {
                     return `<li>${x}</li>`;
                 }).join("")}</ul>`;
