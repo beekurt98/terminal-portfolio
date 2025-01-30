@@ -324,3 +324,16 @@ span {
         background-color: rgba(219, 120, 255, 0.3);
     }
 }
+
+@media screen and (max-width: 480px) {
+  .terminal-div {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    height: 100vh;
+    background-image: none;
+  }
+}
