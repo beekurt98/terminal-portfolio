@@ -90,11 +90,12 @@ body {
   margin-right: auto;
   margin-left: 5px;
   color: white;
-  font-family: "Segoe UI";
+  font-family: monospace;
   font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 7px;
 }
 
 .control {
