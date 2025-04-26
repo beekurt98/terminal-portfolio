@@ -83,6 +83,12 @@ let commandDict = {
     "themes": themes,
 };
 
+
+let userCommandDiv = document.querySelector(".user-command");
+userCommandDiv.addEventListener("focus", (e) => {
+  e.preventDefault();
+})
+
 function addComment() {
     let newComment = document.createElement("div");
     newComment.classList.add(".user-comment");
