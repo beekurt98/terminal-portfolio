@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
     --gray: #2E2E2E;
 }
@@ -327,6 +331,7 @@ span {
 
 @media screen and (max-width: 480px) {
   .terminal-div {
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -334,6 +339,6 @@ span {
   }
   body {
     height: 100vh;
-    background-image: none;
+    background-image: linear-gradient(to right, rgb(239, 208, 255), white);
   }
 }
