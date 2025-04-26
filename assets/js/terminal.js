@@ -49,11 +49,11 @@ let rootCmds = {
     "about": `<div>Hey, I'm Berna Kurt! I'm a junior web developer who wants to build good, responsive and secure websites!</div>`,
     "education": ["Computer Engineering - Adnan Menderes University (Incomplete)", "Korean Language and Literature - Ankara University (GPA: 3.96)", "Exchange Student with Focus on KFL - Hanguk University of Foreign Studies"],
     "skills": `<div><p>Languages: Turkish (native), English (fluent), Korean (fluent)</p>
-        <p>Programming languages: Python, JavaScript/Typescript, PHP</p>
-        <p>Frameworks & Libraries: Selenium, BeautifulSoup4, Pandas, Node.JS, Express, React.JS (loading...)</p>
+        <p>Programming languages: Python, JavaScript</p>
+        <p>Frameworks & Libraries: Selenium, BeautifulSoup4, Pandas, Node.JS, React.JS, Next.JS, Framer Motion</p>
         <p>Developer Tools: Git/Github, Postman</p>
         <p>OS: Windows, Kali Linux</p></div>`,
-    "interests": `<div>I like coding, linguistics, geology & fantasy novels! </div>`,
+    "interests": `<div>I like coding, linguistics, geology & fantasy novels. </div>`,
     "information": `<div>This project was inspired by Guillaume Reygner's portfolio (https://guillaumereygner.fr/).
             <br/><br/>
             I used vanilla JavaScript, HTML and CSS while creating this project.<br/>

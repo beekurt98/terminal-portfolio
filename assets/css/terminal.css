@@ -3,330 +3,332 @@
 }
 
 :root {
-    --gray: #2E2E2E;
+  --gray: #2E2E2E;
 }
 
 /* body styling */
 body {
-    font-family: monospace;
-    font-size: large;
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    overflow: hidden;
-    z-index: -1;
-    transition: 5s ease;
+  font-family: monospace;
+  font-size: large;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  overflow: hidden;
+  z-index: -1;
+  transition: 5s ease;
 }
 
 /* terminal logo */
 .termlogo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 85px;
-    height: 90px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: solid 1.5px rgba(0, 0, 233, 0);
-    position: absolute;
-    left: 20px;
-    top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 90px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: solid 1.5px rgba(0, 0, 233, 0);
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 
 .termlogo:hover {
-    background-color: rgba(0, 0, 233, 0.1);
-    border: solid 1.5px rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 233, 0.1);
+  border: solid 1.5px rgba(0, 0, 0, 0);
 }
 
 .termlogo-clicked {
-    background-color: rgba(0, 0, 233, 0.1);
-    border: solid 1.5px rgba(0, 0, 233, 0.1);
+  background-color: rgba(0, 0, 233, 0.1);
+  border: solid 1.5px rgba(0, 0, 233, 0.1);
 }
 
 .termlogo img {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 /* Terminal Div */
 .terminal-div {
-    height: 400px;
-    width: 600px;
-    min-width: 350px;
-    min-height: 200px;
-    left: 35%;
-    top: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--gray);
-    background-image: linear-gradient(to right, var(--gray), #565656);
-    position: absolute;
-    border-radius: 5px;
-    resize: both;
-    overflow-y: auto;
-    overflow-x: hidden;
-    visibility: visible;
-    z-index: 1;
+  height: 400px;
+  width: 600px;
+  min-width: 350px;
+  min-height: 200px;
+  left: 35%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  background-image: linear-gradient(to right, var(--gray), #565656);
+  position: absolute;
+  border-radius: 5px;
+  resize: both;
+  overflow-y: auto;
+  overflow-x: hidden;
+  visibility: visible;
+  z-index: 1;
 }
 
 .terminal-header {
-    height: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    cursor: grab;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: grab;
 }
 
 .title {
-    margin-right: auto;
-    margin-left: 5px;
-    color: white;
-    font-family: "Segoe UI";
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-right: auto;
+  margin-left: 5px;
+  color: white;
+  font-family: "Segoe UI";
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .control {
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .control svg path {
-    stroke: white;
+  stroke: white;
 }
 
 .x:hover {
-    background-color: red;
+  background-color: red;
 }
 
 .s:hover {
-    background-color: gray;
+  background-color: gray;
 }
 
 .terminal-chat {
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    padding-top: 10px;
-    height: 100%;
-    width: 95%;
-    overflow-y: scroll;
-    scrollbar-width: thin;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 10px;
+  height: 100%;
+  width: 95%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
 
-    div {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 li {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 .ls-cont {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    li {
-        list-style-type: none;
-    }
+  li {
+    list-style-type: none;
+  }
 }
 
 .user-comment {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .comments {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .comment-div {
-    display: grid;
-    grid-template-columns: auto 8fr;
-    gap: 10px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto 8fr;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .user-command {
-    width: 95%;
-    border: none;
-    font-family: monospace;
-    caret-color: white;
-    color: white;
-    font-size: large;
+  width: 95%;
+  border: none;
+  font-family: monospace;
+  caret-color: white;
+  color: white;
+  font-size: large;
 }
 
 .red {
-    color: red;
+  color: red;
 }
 
 .purple {
-    color: rgb(135, 42, 182);
+  color: rgb(135, 42, 182);
 }
 
 .blue {
-    color: rgb(84, 170, 255);
+  color: rgb(84, 170, 255);
 }
 
 .green {
-    color: greenyellow;
+  color: greenyellow;
 }
 
 span {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .user-command:focus {
-    outline: none;
+  outline: none;
 }
 
 .terminal-minimized {
-    height: 35px;
-    width: 145px;
-    background-color: var(--gray);
-    background-image: linear-gradient(to right, var(--gray), #565656);
-    border-radius: 15px 15px 0 0;
-    margin-left: 20px;
-    color: white;
-    display: flex;
-    text-align: center;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    cursor: pointer;
-    visibility: hidden;
+  height: 35px;
+  width: 145px;
+  background-color: var(--gray);
+  background-image: linear-gradient(to right, var(--gray), #565656);
+  border-radius: 15px 15px 0 0;
+  margin-left: 20px;
+  color: white;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  visibility: hidden;
 }
 
 .terminal-minimized:hover {
-    background-image: linear-gradient(to left, var(--gray), #565656);
+  background-image: linear-gradient(to left, var(--gray), #565656);
 }
 
 /* themes */
 
 .default {
-    background-image: linear-gradient(to right, lightblue, blue);
+  background-image: linear-gradient(to right, lightblue, blue);
 
-    .terminal-chat, .user-command {
-        background-color: black;
-        color: white;
-    }
+  .terminal-chat,
+  .user-command {
+    background-color: black;
+    color: white;
+  }
 
-    .terminal-chat {
-        scrollbar-color: var(--gray) black;
-    }
+  .terminal-chat {
+    scrollbar-color: var(--gray) black;
+  }
 }
 
 .hacker {
-    background-image: url("../images/kali-linux-wallpaper.png");
+  background-image: url("../images/kali-linux-wallpaper.png");
 
-    .terminal-chat, .user-command {
-        background-color: black;
-        color: white;
-    }
+  .terminal-chat,
+  .user-command {
+    background-color: black;
+    color: white;
+  }
 
-    background-size: cover;
+  background-size: cover;
 
-    .termlogo {
-        color: white;
-    }
+  .termlogo {
+    color: white;
+  }
 
-    .termlogo svg path {
-        fill: gray;
-    }
+  .termlogo svg path {
+    fill: gray;
+  }
 
-    .terminal-chat,
-    .terminal-chat input {
-        color: rgb(33, 247, 33);
-    }
+  .terminal-chat,
+  .terminal-chat input {
+    color: rgb(33, 247, 33);
+  }
 
-    .terminal-chat {
-        scrollbar-color: var(--gray) black;
-    }
+  .terminal-chat {
+    scrollbar-color: var(--gray) black;
+  }
 
-    .blue {
-        color: green;
-    }
+  .blue {
+    color: green;
+  }
 
-    .termlogo:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-    }
+  .termlogo:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
 
 .light {
-    background-image: linear-gradient(to left, rgb(208, 243, 255), white);
+  background-image: linear-gradient(to left, rgb(208, 243, 255), white);
 
-    .termlogo {
-        color: navy;
-    }
+  .termlogo {
+    color: navy;
+  }
 
-    .termlogo svg path {
-        fill: paleturquoise;
-    }
+  .termlogo svg path {
+    fill: paleturquoise;
+  }
 
-    .terminal-header {
-        background-color: lightskyblue;
-    }
+  .terminal-header {
+    background-color: lightskyblue;
+  }
 
-    .terminal-chat,
-    .terminal-chat input {
-        color: navy;
-        background-color: white;
-        scrollbar-color: lightblue white;
-        caret-color: navy;
-    }
+  .terminal-chat,
+  .terminal-chat input {
+    color: navy;
+    background-color: white;
+    scrollbar-color: lightblue white;
+    caret-color: navy;
+  }
 
-    .termlogo:hover {
-        background-color: rgba(120, 190, 255, 0.3);
-    }
+  .termlogo:hover {
+    background-color: rgba(120, 190, 255, 0.3);
+  }
 }
 
 .cute {
-    background-image: linear-gradient(to right, rgb(239, 208, 255), white);
+  background-image: linear-gradient(to right, rgb(239, 208, 255), white);
 
-    .termlogo {
-        color: palevioletred;
-    }
+  .termlogo {
+    color: palevioletred;
+  }
 
-    .termlogo svg path {
-        fill: palevioletred;
-    }
+  .termlogo svg path {
+    fill: palevioletred;
+  }
 
-    .terminal-header {
-        background-color: pink;
-    }
+  .terminal-header {
+    background-color: pink;
+  }
 
-    .terminal-minimized {
-        background-color: pink;
-    }
+  .terminal-minimized {
+    background-color: pink;
+  }
 
-    .terminal-chat,
-    .terminal-chat input,
-    .user-command {
-        color: palevioletred;
-        background-color: white;
-        scrollbar-color: pink white;
-        caret-color: palevioletred;
-    }
+  .terminal-chat,
+  .terminal-chat input,
+  .user-command {
+    color: palevioletred;
+    background-color: white;
+    scrollbar-color: pink white;
+    caret-color: palevioletred;
+  }
 
-    .termlogo:hover {
-        background-color: rgba(219, 120, 255, 0.3);
-    }
+  .termlogo:hover {
+    background-color: rgba(219, 120, 255, 0.3);
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -334,11 +336,13 @@ span {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
+
   body {
     height: 100vh;
-    background-image: linear-gradient(to right, rgb(239, 208, 255), white);
+    width: 100vw;
+    background-color: blue;
   }
 }
